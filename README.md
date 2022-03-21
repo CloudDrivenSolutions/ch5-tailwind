@@ -4,8 +4,8 @@
 This is an example of how to utilize Tailwind CSS with React to easily create layouts
 designed for use with Crestron panels.
 
-YouTube video coming...
-
+YouTube Video
+https://youtu.be/6a6OaMFFeec
 
 
 
