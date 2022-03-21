@@ -18,21 +18,21 @@ function App() {
       {/* <div className="grow flex items-center justify-center text-gray-100 text-2xl font-semibold">
         {buttons[active].name}
       </div> */}
-      <div className="grow grid grid-cols-4 gap-8 m-8">
+      <div className="grow grid grid-cols-2 xl:grid-cols-4 gap-8 m-8">
         <div className="bg-gray-200 bg-opacity-80 shadow-xl rounded-md">
           <p className="text-center text-xl font-medium mt-2">
             {buttons[active].name}
           </p>
         </div>
-        <div className="bg-gray-200 bg-opacity-80 shadow-xl rounded-md col-span-3"></div>
+        <div className="bg-gray-200 bg-opacity-80 shadow-xl rounded-md xl:col-span-3"></div>
       </div>
-      <div className="h-32 xl:h-24 hd:h-36 bg-slate-700 bg-opacity-70 px-4 py-4 flex justify-evenly">
+      <div className="h-32 xl:h-24 hd:h-36 bg-slate-700 bg-opacity-70 px-4 py-4 hd:py-6 flex justify-evenly">
         {buttons.map((item, index) => (
           <button
             key={index}
             className={`${
               active === index && "border-transparent bg-indigo-600 scale-95"
-            } w-24 border-gray-200 border rounded-md text-gray-200 px-1 transform duration-200 flex flex-col items-center justify-center text-sm`}
+            } w-24 border-gray-200 border rounded-md text-gray-200 px-1 transform duration-200 flex flex-col items-center justify-center hd:justify-between hd:py-4 text-sm hd:text-base`}
             t
             onClick={() => setActive(index)}
           >
